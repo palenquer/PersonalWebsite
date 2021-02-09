@@ -16,7 +16,7 @@ export const Navbar = () => {
       <nav className="flex text-white items-center flex-wrap bg-purple-400 p-3 md:px-14">
         <NavTitle />
         <button
-          className=" hover:bg-purple-500 inline-flex p-3 rounded md:hidden text-white ml-auto hover:text-white outline-none focus:outline-none"
+          className={`${active ? "bg-purple-500" : ""} hover:bg-purple-500 inline-flex p-3 rounded md:hidden text-white ml-auto hover:text-white outline-none focus:outline-none`}
           onClick={handleClick}
         >
           <MenuIconOpen className={`${active ? "hidden" : ""} `} />
