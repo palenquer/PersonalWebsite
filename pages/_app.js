@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 import "tailwindcss/tailwind.css";
-import Nav from "../components/Nav";
+import Navbar from "../components/Nav";
 
 function MyApp({ Component, pageProps }) {
   return (
     <div className="font-Montserrat h-screen w-screen">
-      <Nav/>
+      <Navbar/>
       <Component {...pageProps} />
     </div>
   );
