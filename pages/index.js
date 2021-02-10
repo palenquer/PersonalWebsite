@@ -3,13 +3,13 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center w-full h-full text-gray-700 leading-loose">
-      <div className="max-w-xs">
-        <h2 className="text-purple-500 text-2xl font-bold">Hello I'm</h2>
+      <div className="max-w-xs md:max-w-sm">
+        <h2 className="text-purple-500 text-3xl font-bold">Hello I'm</h2>
         <h1 className="text-6xl font-Teko font-black text-gray-800">
           PAULO ALENQUER
         </h1>
-        <h3 className="font-semibold">Web Developer</h3>
-        <h4 className="text-gray-500 text-sm">
+        <h3 className="font-semibold text-lg">Web Developer</h3>
+        <h4 className="text-gray-500 text-base">
           My name is Paulo Alenquer, I'm 23 years old, I love Technology,
           Programming and Art.
         </h4>
