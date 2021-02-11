@@ -1,24 +1,13 @@
-import Link from "next/link";
+import LinkButton from "../components/LinkButton";
+import HomeText from "../components/Home/HomeText";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center w-full h-full text-gray-700 leading-loose">
-      <div className="max-w-xs md:max-w-sm">
-        <h2 className="text-purple-500 text-3xl font-bold">Hello I'm</h2>
-        <h1 className="text-6xl font-Teko font-black text-gray-800">
-          PAULO ALENQUER
-        </h1>
-        <h3 className="font-semibold text-lg">Web Developer</h3>
-        <h4 className="text-gray-500 text-base">
-          My name is Paulo Alenquer, I'm 23 years old, I love Technology,
-          Programming and Art.
-        </h4>
-        <Link href="/about">
-          <a className="block bg-purple-500 w-28 mt-8 rounded-md h-12 text-white transform hover:rotate-6 hover:shadow-3xl transition duration-500 focus:outline-none text-center leading-12">
-            Hire me
-          </a>
-        </Link>
-      </div>
-    </div>
+    <main className="flex flex-col justify-center items-center w-full h-full text-gray-700 leading-loose">
+      <section className="max-w-xs md:max-w-sm">
+        <HomeText name="PAULO ALENQUER" text="in love with technology, programming and art." business="Web Developer"/>
+        <LinkButton text="Hire me" href="/about" />
+      </section>
+    </main>
   );
 }
