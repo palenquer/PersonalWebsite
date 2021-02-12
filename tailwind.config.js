@@ -8,6 +8,7 @@ module.exports = {
       "3/4": "75%",
     },
     boxShadow: {
+      "2xl": "4px 4px 4px 4px rgba(0, 0, 0, 0.02)",
       "3xl": "8px 8px 6px -6px rgba(0, 0, 0, 0.75)",
     },
     extend: {
