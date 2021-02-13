@@ -8,14 +8,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head />
-      <div className=" relative font-Montserrat h-screen w-screen">
+      <div className=" relative font-Montserrat min-h-screen w-screen">
         <Image
           layout="fill"
           className="object-center object-cover pointer-events-none opacity-20"
           src="/background.jpg"
           alt="Background Image"
         />
-        <div className="relative z-1 h-full w-full">
+        <div className="relative z-1 min-h-screen w-full">
           <Navbar />
           <Component {...pageProps} />
         </div>

@@ -27,13 +27,13 @@ export const Navbar = () => {
         <div
           className={`${
             active ? "" : "hidden"
-          }   w-full flex md:inline-flex md:flex-grow md:w-auto`}
+          }   w-full h-screen md:h-full flex md:inline-flex md:flex-grow md:w-auto`}
         >
-          <div className="md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center flex justify-center items-center flex-col md:h-auto p-4">
-            <NavItem href="/" name="Home" />
-            <NavItem href="/about" name="About" />
-            <NavItem href="/portfolio" name="Portfolio" />
-            <NavItem href="/contact" name="Contact" />
+          <div className="md:inline-flex md:flex-row md:ml-auto md:w-auto w-full md:items-center flex justify-center items-center flex-col md:h-auto">
+            <NavItem href="/" name="Home" onClick={handleClick}/>
+            <NavItem href="/about" name="About" onClick={handleClick}/>
+            <NavItem href="/portfolio" name="Portfolio" onClick={handleClick}/>
+            <NavItem href="/contact" name="Contact" onClick={handleClick}/>
           </div>
         </div>
       </nav>
