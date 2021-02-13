@@ -2,18 +2,19 @@ import "isomorphic-fetch";
 import UserInfo from "../components/About/UserInfo";
 import UserName from "../components/About/UserName";
 import ItemSkill from "../components/About/ItemSkill";
+import PageDetails from "../components/About/PageDetails";
 import Image from "next/image";
 
 export default function About({ userInfo }) {
   return (
-    <main className="flex flex-col md:flex-row md:justify-evenly justify-center items-center w-full min-h-screen text-gray-700 leading-loose z-0">
-      <section className="flex flex-col justify-center items-center md:mt-0 border-b-2 w-full h-screen md:w-6/12 pt-28 pb-2 bg-purple-100">
-        <div className="border-purple-500 border-2 p-4 rounded-xl relative w-80 md:mb-20">
-          <div className="absolute -top-5 left-20 z-20 bg-purple-100 h-6 w-40">
+    <main className="flex flex-col md:flex-row md:justify-between justify-center items-center w-full min-h-screen leading-loose z-0">
+      <section className="relative flex flex-col justify-center items-center w-full h-screen md:w-6/12 lg:w-4/12 pt-28 bg-purple-400 text-white">
+        <PageDetails/>
+        <div className="border-white border-2 p-4 rounded-xl relative w-80 md:mb-20">
+          <div className="absolute -top-5 left-20 z-20 bg-purple-400 h-6 w-40">
             <UserName name={userInfo.name} />
           </div>
-
-          <figure className="relative border-solid border-4 border-purple-500 w-full">
+          <figure className="border-solid border-4 border-white w-full">
             <Image
               layout="responsive"
               className="object-center object-cover pointer-events-none"
@@ -23,7 +24,7 @@ export default function About({ userInfo }) {
               alt="Avatar Image"
             />
           </figure>
-          <div className="flex justify-center flex-col w-full text-sm pt-4 border-b-2 border-purple-500">
+          <div className="flex justify-center flex-col w-full text-sm pt-4 border-b-2 border-white">
             <UserInfo info="Age" text="23" />
             <UserInfo info="Location" text={userInfo.location} />
           </div>
@@ -42,8 +43,8 @@ export default function About({ userInfo }) {
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-center items-center px-6 w-full md:w-3/6 md:mt-0 h-screen">
-        <div className="p-6">
+      <section className="flex flex-col justify-center items-center px-6 w-full md:w-3/6 md:mt-0 h-screen flex-grow">
+        <div className="p-6 lg:w-6/12">
           <h1>
             My name is Paulo Alenquer, I'm 23 years old, I love Technology,
             Programming and Art. I am looking for work experience, to develop as
