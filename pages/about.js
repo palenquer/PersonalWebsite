@@ -3,13 +3,15 @@ import UserInfo from "../components/About/UserInfo";
 import UserName from "../components/About/UserName";
 import ItemSkill from "../components/About/ItemSkill";
 import PageDetails from "../components/About/PageDetails";
+import SvgArrow from "../components/About/SvgArrow";
+import LinkButton from "../components/LinkButton";
 import Image from "next/image";
 
 export default function About({ userInfo }) {
   return (
-    <main className="flex flex-col md:flex-row md:justify-between justify-center items-center w-full min-h-screen leading-loose z-0">
-      <section className="relative flex flex-col justify-center items-center w-full h-screen md:w-6/12 lg:w-4/12 pt-28 bg-purple-400 text-white">
-        <PageDetails/>
+    <main className="flex flex-col md:flex-row md:justify-between justify-center items-center w-full leading-loose z-0">
+      <section className="relative flex flex-col justify-center items-center w-full h-screen md:w-6/12 lg:w-4/12 bg-purple-400 text-white">
+        <PageDetails />
         <div className="border-white border-2 p-4 rounded-xl relative w-80 md:mb-20">
           <div className="absolute -top-5 left-20 z-20 bg-purple-400 h-6 w-40">
             <UserName name={userInfo.name} />
@@ -42,14 +44,21 @@ export default function About({ userInfo }) {
             </div>
           </div>
         </div>
+        <SvgArrow className="md:hidden absolute animate-bounce fill-current text-white transform rotate-90 bottom-4" />
       </section>
       <section className="flex flex-col justify-center items-center px-6 w-full md:w-3/6 md:mt-0 h-screen flex-grow">
+        <h1 className="text-2xl font-bold text-purple-500">About me</h1>
         <div className="p-6 lg:w-6/12">
-          <h1>
-            My name is Paulo Alenquer, I'm 23 years old, I love Technology,
-            Programming and Art. I am looking for work experience, to develop as
-            a professional and add value to the company.
-          </h1>
+          <p className="mb-4">
+            I am looking for work experience, to develop as a professional and
+            add value to the company.
+          </p>
+          <p className="">
+            I want to increasingly improve my knowledge with the aim of being
+            able to solve problems more and more, in order to learn and develop
+            my skills.
+          </p>
+          <LinkButton text="Portfolio" href="/portfolio" />
         </div>
       </section>
     </main>
