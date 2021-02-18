@@ -61,7 +61,7 @@ export default function Portfolio() {
             />
             {vueForm && (
               <div className="absolute h-full w-full flex flex-col justify-center items-center transition duration-500 hover:bg-gray-600 opacity-90 text-white">
-                <h1 className="text-lg font-bold">VueForm</h1>
+                <h1 className="text-lg font-bold mb-4">VueForm</h1>
                 <div className="flex flex-wrap justify-center items-center">
                   <TagItem name="Front-end" />
                   <TagItem name="Back-end" />

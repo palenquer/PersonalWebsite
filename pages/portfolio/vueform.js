@@ -1,7 +1,33 @@
+import SvgArrow from "../../components/SvgArrow";
+import Link from "next/link";
+
 export default function VueForm() {
   return (
-    <div className="flex justify-center items-center w-screen h-screen">
-      <h1>VueForm</h1>
-    </div>
+    <main className="relative flex flex-col justify-center items-center w-screen h-screen">
+      <section className="flex justify-center items-center h-full w-full border-solid min-h-full">
+        <div className="flex justify-center items-center flex-col h-full w-full md:h-4/5 md:w-3/5 border-purple-400 bg-purple-400 border-4">
+          <div className=" relative flex h-14 flex-col justify-center items-center text-center w-full">
+            <Link href="/portfolio">
+              <div className="absolute transform rotate-90 left-2 cursor-pointer">
+                <SvgArrow className="fill-current text-white" />
+              </div>
+            </Link>
+            <h1 className="text-white font-bold text-lg">DEMO</h1>
+            <a
+              href="https://github.com/palenquer/VueForm"
+              className="absolute rounded text-white font-bold text-lg right-2 h-10 w-20 bg-yellow-400 flex justify-center items-center"
+            >
+              CODE
+            </a>
+          </div>
+
+          <iframe
+            src="https://vueform.palenquer.vercel.app"
+            title="Reusable React Input"
+            className="w-full h-full bg-gray-100 border-2 border-solid"
+          />
+        </div>
+      </section>
+    </main>
   );
 }

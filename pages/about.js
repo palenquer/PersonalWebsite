@@ -3,7 +3,7 @@ import UserInfo from "../components/About/UserInfo";
 import UserName from "../components/About/UserName";
 import ItemSkill from "../components/About/ItemSkill";
 import PageDetails from "../components/About/PageDetails";
-import SvgArrow from "../components/About/SvgArrow";
+import SvgArrow from "../components/SvgArrow";
 import LinkButton from "../components/LinkButton";
 import Image from "next/image";
 
@@ -44,7 +44,7 @@ export default function About({ userInfo }) {
             </div>
           </div>
         </div>
-        <SvgArrow className="md:hidden absolute animate-bounce fill-current text-white transform rotate-90 bottom-4" />
+        <SvgArrow className="md:hidden absolute animate-bounce fill-current text-white bottom-4" />
       </section>
       <section className="flex flex-col justify-center items-center px-6 w-full md:w-3/6 md:mt-0 h-screen flex-grow">
         <h1 className="text-2xl font-bold text-purple-500">About me</h1>

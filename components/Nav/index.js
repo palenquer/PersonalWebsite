@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="w-screen flex text-white items-center flex-wrap bg-purple-400 md:fixed p-3 md:px-14 sticky top-0 z-50">
+      <nav className="w-screen flex text-white items-center flex-wrap bg-purple-400 p-3 md:fixed md:px-14 sticky top-0 z-50">
         <NavTitle />
         <button
           className={`${active ? "bg-purple-500" : ""} hover:bg-purple-500 inline-flex p-3 rounded md:hidden text-white ml-auto hover:text-white outline-none focus:outline-none`}
