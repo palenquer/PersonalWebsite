@@ -17,14 +17,14 @@ export default function Portfolio() {
   };
 
   return (
-    <main className="flex flex-col justify-center items-center w-screen h-screen">
+    <main className="flex flex-col justify-center items-center w-full h-full md:h-screen py-2 md:py-0">
       <h1 className="text-2xl font-bold text-purple-500 mb-8">My Projects</h1>
       <section className="flex flex-col md:flex-row">
         <Link href="/portfolio/reactform">
           <article
             className={`${
               reactForm ? "" : ""
-            }w-80 cursor-pointer mb-4 md:mb-0 md:mr-4 flex relative`}
+            }w-80 cursor-pointer mb-4 md:mb-0 md:mr-4 flex relative px-2 md:px-0`}
             onMouseEnter={handleReactForm}
             onMouseLeave={handleReactForm}
           >
@@ -50,7 +50,7 @@ export default function Portfolio() {
           <article
             className={`${
               vueForm ? "" : ""
-            }w-80 cursor-pointer mb-4 md:mb-0 md:mr-0 flex relative`}
+            }w-80 cursor-pointer mb-4 md:mb-0 md:mr-0 flex relative px-2 md:px-0`}
             onMouseEnter={handleVueForm}
             onMouseLeave={handleVueForm}
           >

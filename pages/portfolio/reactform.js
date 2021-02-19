@@ -24,7 +24,7 @@ export default function ReactForm() {
           <iframe
             src="https://react-form.palenquer.vercel.app"
             title="Reusable React Input"
-            className="w-full h-full bg-gray-100 border-2 border-solid"
+            className="w-full h-full bg-white border-2 border-solid"
           />
         </div>
       </section>
