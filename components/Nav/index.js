@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export const Navbar = () => {
   const variants = {
-    open: { opacity: 1, x: 0 },
+    open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: "-100%" },
   };
   const [active, setActive] = useState(false);
@@ -38,20 +38,20 @@ export const Navbar = () => {
           <NavItem href="/contact" name="Contact" onClick={handleClick} />
         </div>
 
-        <motion.div
+        <motion.nav
           animate={active ? "open" : "closed"}
           variants={variants}
           className={`${
             active ? "" : "hidden"
-          } md:hidden w-full h-screen flex text-white`}
+          } md:hidden w-full h-screen flex text-white `}
         >
-          <div className=" w-full flex justify-center items-center flex-col bg-purple-400">
+          <div className=" w-full flex justify-center items-center flex-col ">
             <NavItem href="/" name="Home" onClick={handleClick} />
             <NavItem href="/about" name="About" onClick={handleClick} />
             <NavItem href="/portfolio" name="Portfolio" onClick={handleClick} />
             <NavItem href="/contact" name="Contact" onClick={handleClick} />
           </div>
-        </motion.div>
+        </motion.nav>
       </nav>
     </>
   );
