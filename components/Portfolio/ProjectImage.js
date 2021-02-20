@@ -12,6 +12,7 @@ const ProjectImage = ({src, alt, onMouseEnter, onMouseLeave, className}) => {
         alt={alt}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
+        priority
       />
     </figure>
   );

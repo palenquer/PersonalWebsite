@@ -1,4 +1,5 @@
 import SvgArrow from "../../components/SvgArrow";
+import GithubIcon from "../../components/Portfolio/GithubIcon";
 import Link from "next/link";
 
 export default function ReactForm() {
@@ -13,11 +14,13 @@ export default function ReactForm() {
               </div>
             </Link>
             <h1 className="text-white font-bold text-lg">DEMO</h1>
+
             <a
               href="https://github.com/palenquer/ReactForm"
-              className="absolute rounded text-white font-bold text-lg right-2 h-10 w-20 bg-yellow-400 flex justify-center items-center"
+              className="absolute rounded text-white font-bold text-lg right-2 h-10 w-24 bg-yellow-400 flex justify-evenly items-center transition duration-150 hover:bg-yellow-500"
             >
-              CODE
+              <GithubIcon />
+              Github
             </a>
           </div>
 

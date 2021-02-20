@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import ProjectImage from "../components/Portfolio/ProjectImage";
 import TagItem from "../components/Portfolio/TagItem";
+import { motion } from "framer-motion";
 import LinkButton from "../components/LinkButton";
 import Link from "next/link";
 
 export default function Portfolio() {
   const [reactForm, setReactForm] = useState(false);
   const [vueForm, setVueForm] = useState(false);
+
+  const variants = {
+    open: { opacity: 1, y: "0%" },
+    closed: { opacity: 0, y: "0" },
+  };
 
   const handleReactForm = () => {
     setReactForm(!reactForm);
@@ -34,15 +40,24 @@ export default function Portfolio() {
               className="w-80 "
             />
             {reactForm && (
-              <div className="absolute h-full w-full flex flex-col justify-center items-center transition duration-500 hover:bg-gray-600 opacity-90 text-white">
-                <h1 className=" text-lg font-bold mb-4">ReactForm</h1>
-                <div className="flex flex-wrap justify-center items-center">
-                  <TagItem name="Front-end" />
-                  <TagItem name="Back-end" />
-                  <TagItem name="React.js" />
-                  <TagItem name="Node.js" />
+              <motion.div
+                initial={{ y: "-50%" }}
+                animate={reactForm ? "open" : "closed"}
+                variants={variants}
+                className={`${
+                  reactForm ? "" : "hidden"
+                } absolute w-full h-full flex text-white  `}
+              >
+                <div className="absolute h-full w-full flex flex-col justify-center items-center transition duration-500 hover:bg-gray-600 opacity-90 text-white">
+                  <h1 className=" text-lg font-bold mb-4">ReactForm</h1>
+                  <div className="flex flex-wrap justify-center items-center">
+                    <TagItem name="Front-end" />
+                    <TagItem name="Back-end" />
+                    <TagItem name="React.js" />
+                    <TagItem name="Node.js" />
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             )}
           </article>
         </Link>
@@ -60,16 +75,25 @@ export default function Portfolio() {
               className="w-80"
             />
             {vueForm && (
-              <div className="absolute h-full w-full flex flex-col justify-center items-center transition duration-500 hover:bg-gray-600 opacity-90 text-white">
-                <h1 className="text-lg font-bold mb-4">VueForm</h1>
-                <div className="flex flex-wrap justify-center items-center">
-                  <TagItem name="Front-end" />
-                  <TagItem name="Back-end" />
-                  <TagItem name="Vue.js" />
-                  <TagItem name="Vuex.js" />
-                  <TagItem name="Node.js" />
+              <motion.div
+                initial={{ y: "-50%" }}
+                animate={vueForm ? "open" : "closed"}
+                variants={variants}
+                className={`${
+                  vueForm ? "" : "hidden"
+                } absolute w-full h-full flex text-white  `}
+              >
+                <div className="absolute h-full w-full flex flex-col justify-center items-center transition duration-500 hover:bg-gray-600 opacity-90 text-white">
+                  <h1 className="text-lg font-bold mb-4">VueForm</h1>
+                  <div className="flex flex-wrap justify-center items-center">
+                    <TagItem name="Front-end" />
+                    <TagItem name="Back-end" />
+                    <TagItem name="Vue.js" />
+                    <TagItem name="Vuex.js" />
+                    <TagItem name="Node.js" />
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             )}
           </article>
         </Link>
