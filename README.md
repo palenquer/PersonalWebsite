@@ -6,10 +6,10 @@ Projeto com o intúito de fazer um website próprio e ao mesmo tempo, melhorar m
 Clique na DEMO ou faça um gitclone e digite yarn run dev(ou npm se preferir) no terminal, logo em seguida abra o localhost.
 
 <h2>Dependências utilizadas</h2>
-  ReactJS
-  NextJS
-  TailwindCSS
-  Framer-Motion
+  <p>ReactJS</p>
+  <p>NextJS</p>
+  <p>TailwindCSS</p>
+  <p>Framer-Motion</p>
   
 ---------------
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
