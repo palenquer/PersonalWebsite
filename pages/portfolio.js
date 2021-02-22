@@ -30,7 +30,7 @@ export default function Portfolio() {
           <article
             className={`${
               reactForm ? "" : ""
-            }w-80 cursor-pointer mb-4 md:mb-0 md:mr-4 flex relative px-2 md:px-0`}
+            }w-80 cursor-pointer mb-4 md:mb-0 md:mr-4 flex relative md:px-0`}
             onMouseEnter={handleReactForm}
             onMouseLeave={handleReactForm}
           >
@@ -46,7 +46,7 @@ export default function Portfolio() {
                 variants={variants}
                 className={`${
                   reactForm ? "" : "hidden"
-                } absolute w-full h-full flex text-white  `}
+                } absolute w-80 h-full flex text-white  `}
               >
                 <div className="absolute h-full w-full flex flex-col justify-center items-center transition duration-500 hover:bg-gray-600 opacity-90 text-white">
                   <h1 className=" text-lg font-bold mb-4">ReactForm</h1>
@@ -65,7 +65,7 @@ export default function Portfolio() {
           <article
             className={`${
               vueForm ? "" : ""
-            }w-80 cursor-pointer mb-4 md:mb-0 md:mr-0 flex relative px-2 md:px-0`}
+            }w-80 cursor-pointer mb-4 md:mb-0 md:mr-0 flex relative md:px-0`}
             onMouseEnter={handleVueForm}
             onMouseLeave={handleVueForm}
           >
@@ -81,7 +81,7 @@ export default function Portfolio() {
                 variants={variants}
                 className={`${
                   vueForm ? "" : "hidden"
-                } absolute w-full h-full flex text-white  `}
+                } absolute w-80 h-full flex text-white  `}
               >
                 <div className="absolute h-full w-full flex flex-col justify-center items-center transition duration-500 hover:bg-gray-600 opacity-90 text-white">
                   <h1 className="text-lg font-bold mb-4">VueForm</h1>
