@@ -2,7 +2,7 @@
 
 Projeto com o intúito de fazer um website próprio e ao mesmo tempo, melhorar minhas habilidades e conhecimentos em ReactJS e NextJS.
 
-<h2> Como utilizar o projeto</h2>
+<h2> Como inicializar o projeto</h2>
 Clique na DEMO ou faça um gitclone e digite yarn run dev(ou npm se preferir) no terminal, logo em seguida abra o localhost.
 
 <h2>Dependências utilizadas</h2>
