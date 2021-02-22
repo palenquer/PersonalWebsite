@@ -1,3 +1,17 @@
+<h1>DEMO: https://personal-website-git-main-palenquer.vercel.app</h1>
+
+Projeto com o intúito de fazer um website próprio e ao mesmo tempo, melhorar minhas habilidades e conhecimentos em ReactJS e NextJS.
+
+<h2> Como utilizar o projeto</h2>
+Clique na DEMO ou faça um gitclone e digite yarn run dev(ou npm se preferir) no terminal, logo em seguida abra o localhost.
+
+<h2>Dependências utilizadas</h2>
+  ReactJS
+  NextJS
+  TailwindCSS
+  Framer-Motion
+  
+---------------
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
